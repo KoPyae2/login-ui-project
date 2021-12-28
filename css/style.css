@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background: url('../img/wave-footer.png');
+    background-repeat: repeat-x;
+    background-position-y: 130%;
+    background-size:100% 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+.container{
+    width: 330px;
+    height: 400px;
+    background-color: #73a3be;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.login{
+    transform: translateY(3%);
+    transition: all 1s;
+}
+
+
+.fgpass{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.fgpass p{
+    width: 90%;
+    display: block;
+    margin: 40px auto;
+    font-size: 12px;
+    text-align: center;
+   
+}
+
+.fgpass input{
+    width: 75%;
+    margin: 5px auto;
+}
+
+.fgpass .btn{
+    width: 75%;
+    margin: 20px auto;
+}
+
+.signup{
+    transform: translateY(0%);
+    transition: all 1s;
+}
+
+.container i{
+    color: #1C4257;
+    font-size: 4rem;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.container h3{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+form input:focus{
+    outline: 0;
+}
+
+.underinput{
+    font-size: 14px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.underinput label{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.btn{
+    width: 100%;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 0;
+    border: 0;
+    border-radius: 5px;
+    background-color: #1C4257;
+    margin-bottom: 20px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+#chbtn{
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    color: #fff;
+    background-color:#0e2633 ;
+    border: 0;
+    border-radius: 5px;
+    padding: 7px 25px;
+}
+
+#chbtn:focus{
+    outline: 0;
+}
+
+#chbtn:active{
+    transform: scale(0.98);
+}
+
+.underbtn{
+    margin-bottom: 100px;
+}
+
+.fgpass i{
+    margin-top: 15px;
+}
+
+.fgpass p{
+    width: 90%;
+    display: block;
+    margin: 40px auto;
+    font-size: 12px;
+    text-align: center;
+   
+}
+
+.fgpass input{
+    width: 75%;
+    margin: 5px auto;
+}
+
+.fgpass .btn{
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.fgpass .underbtn{
+    width: 90%;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+
+.btn-icon{
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 23px;
+    text-align: center;
+    line-height: 50px;
+
+    position: absolute;
+    top:78%;
+    left:39.2%;
+    opacity: 0.8;
+
+    transition: 0.2s;
+}
+
+.btn-icon:hover{
+    opacity: 1;
+}
+
+#btnprimary{
+    width: 120px;
+    background-color:#1C4257;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 0;
+    font-size: 16px;
+
+    cursor: pointer;
+    opacity: 1;
+}
+
+#btnprimary:active{
+    transform: scale(0.98);
+}
+
+.folating-btn.show .btn-icon:nth-of-type(1){
+    transform: translate(250%);
+    background-color: #4267B2;
+    color: #fff;
+}
+
+.folating-btn.show .btn-icon:nth-of-type(2){
+    transform: translate(360%);
+    background-color: #F4B400;
+    color: #fff;
+}
+
+.folating-btn.show .btn-icon:nth-of-type(3){
+    transform: translate(470%);
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+.folating-btn.show .btn-icon:nth-of-type(4){
+    transform: translate(580%);
+    background-color: #25D366;
+    color: #fff;
+}
+
+.btn-icon:nth-of-type(1){
+    transition-delay:0s;
+}
+.btn-icon:nth-of-type(2){
+    transition-delay:0.2s;
+}
+.btn-icon:nth-of-type(3){
+    transition-delay:0.4s;
+}
+.btn-icon:nth-of-type(4){
+    transition-delay:0.6s;
+}
